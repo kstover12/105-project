@@ -5,7 +5,7 @@ body {
   color: #333745;
   text-decoration: none;
 }
-#home, #about, #services, #contact{
+.class, .about, .services, .contact{
   height: 700px;
 }
 /**This is my header styling**/
@@ -22,7 +22,7 @@ header img{
 }
 /**This is my Nav bar**/
 nav{
-  font-size: 18px;
+  /*font-size: 18px;*/
   text-transform: capitalize;
   float: right;
   font-weight: 600;
@@ -47,19 +47,20 @@ nav ul li a{
 
 
 /** HOME **/
-#home {
+.home {
   padding-top: 50px;
   background-image: url(../img/background-photo.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  height: 700px;
 }
-#home h1{
+.home h1{
   font-family: 'relation', sans-serif;
   font-size: 70px;
   margin-bottom: 0;
 }
-#home h3 {
+.home h3 {
   font-family: 'playfair display';
   text-align: center;
   font-size: 40px;
@@ -67,17 +68,17 @@ nav ul li a{
   padding-left: 200px;
   padding-right: 200px;
 }
-#home span{
+.home span{
   color: #1b998b;
 }
 /**Services**/
-#services {
+.services {
   background-image: url(../img/services.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#services h1, p {
+.services h1, p {
   font-family: 'relation', sans-serif;
   font-size: 55px;
   text-align: center;
@@ -88,60 +89,60 @@ nav ul li a{
   padding-right: 200px;
 }
 
-#services h1 span{
+.services h1 span{
   color: #1b998b;
 }
-#services h2{
+.services h2{
   text-align: center;
   font-family: 'playfair display';
   font-size: 32px;
   margin: 0;
   padding: 0 250px 30px 250px;
 }
-#services p{
+.services p{
   border-bottom: solid #1b998b 1px;
 }
-#services .fourthwidth{
+.services .fourthwidth{
   width: 330px;
   height: 300px;
   float: left;}
 #exp, #ps, #inv{
   border-right: solid #1b998b 1px;
 }
-#services .fourthwidth h3{
+.services .fourthwidth h3{
   font-family: 'playfair display', sans-serif;
   font-size: 25px;
   text-align: center;
   margin-bottom: 0;
 }
-#services .fourthwidth img{
+.services .fourthwidth img{
 display: block;
 margin:0 auto;
 }
 
 /** ABOUT**/
-#about {
+.about {
   padding-top: 55px;
   background-image: url(../img/about.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 }
-#about img {
+.about img {
     display: block;
     margin: auto;
 }
-#about h1, p{
+.about h1, p{
   padding-left: 200px;
   padding-right: 200px;
 }
-#about h1{
+.about h1{
   font-family: 'relation', sans-serif;
   font-size: 50px;
   padding-top: 10px;
   margin: 0;
 }
-#about p{
+.about p{
   font-family: 'playfair display', sans-serif;
   font-size: 28px;
   margin-top: 0;
@@ -149,7 +150,7 @@ margin:0 auto;
   line-height: normal;
 }
 /**FAQs**/
-#faqs{
+.faqs{
   height: 925px;
   padding-top: 50px;
   background-image: url(../img/faqs.png);
@@ -157,24 +158,24 @@ margin:0 auto;
   background-size: cover;
   text-align: center;
 }
-#faqs h1, h2, p{
+.faqs h1, h2, p{
   padding-left: 200px;
   padding-right: 200px;
   margin: 0;
   padding-top: 5px;
 }
-#faqs h1{
+.faqs h1{
   font-family: 'relation', sans-serif;
   font-size: 60px;
 }
-#faqs h2{
+.faqs h2{
   font-family: 'playfair display', sans-serif;
   font-size: 35px;
 }
-#faqs span{
+.faqs span{
   color: #1b998b;
 }
-#faqs p{
+.faqs p{
   font-family: 'playfair display', sans-serif;
   font-size: 25px;
   line-height: normal;
@@ -182,32 +183,32 @@ margin:0 auto;
 }
 
 /**CONTACT**/
-#contact{
+.contact{
   padding-top: 50px;
   background-image: url(../img/contact.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 }
-#contact h1{
+.contact h1{
   font-family: 'relation', sans-serif;
   font-size: 65px;
   padding-top: 100px;
   padding-left: 50px;
   margin-bottom: 0;
 }
-#contact ul li {
+.contact ul li {
   font-family: 'open sans';
   font-size: 30px;
   margin-top: 0;
   list-style: none;
 
 }
-#contact ul li a{
+.contact ul li a{
   text-decoration: underline;
     color: #333745;
 }
-#contact ul li span a{
+.contact ul li span a{
   text-decoration: none;
     color: #333745;
 }
@@ -217,11 +218,12 @@ margin:0 auto;
 /**FOOTER**/
 footer{
   margin-top: 10px;
-  height: 60px;
+  height: 50px;
   position: fixed; /* Set the navbar to fixed position */
   width: 100%;
   bottom: 0; /* Position the footer at the bottom of the page */
-  clear: both;
+  background-color:rgba(27,153,139,.6);
+  padding-top: 5px;
 }
 footer .button{
     background-color: #696773;
@@ -238,13 +240,13 @@ footer a{
   color: white;
   text-decoration: none;
 }
-footer #socialmedia{
+footer .socialmedia{
   margin-top: 0;
   margin-bottom: 0;
   padding-left:0;
   float: right;
 }
-footer #socialmedia li{
+footer .socialmedia li{
   display: inline-block;
   list-style-type: none;
 }
